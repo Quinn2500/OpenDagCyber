@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story>
+    <intro></intro>
+    <options>
+        <option id="0" time="10">
+            <question>je ziet een worm ofzo</question>
+            <answers>
+                <answer ref="1" points="0">
+                    <tekst>worm verwijderen</tekst>
+                </answer>
+                <answer ref="1" points="10">
+                    <tekst>centrale server loskoppelen</tekst>
+                </answer>
+            </answers>
+        </option>
+        <option id="1" time="10">
+            <question>worm verspreid ofzo</question>
+            <answers>
+                <answer ref="3" points="0">
+                    <tekst>schade beoordelen</tekst>
+                </answer>
+                <answer ref="2" points="10">
+                    <tekst>systemen loskoppelen ofzo</tekst>
+                </answer>
+            </answers>
+        </option>
+        <option id="2" time="10">
+            <question>worm kan worden onderzocht</question>
+            <answers>
+                <answer ref="done" points="0">
+                    <tekst>eigen systeem aankoppelen</tekst>
+                </answer>
+                <answer ref="done" points="10">
+                    <tekst>expert erbij halen</tekst>
+                </answer>
+            </answers>
+        </option>
+        <option id="3" time="10">
+            <question>worm verspreid nog verder ofzo</question>
+            <answers>
+                <answer ref="done" points="0">
+                    <tekst>eigen systeem aankoppelen</tekst>
+                </answer>
+                <answer ref="2" points="10">
+                    <tekst>netwerk uitschakelen</tekst>
+                </answer>
+            </answers>
+        </option>
+    </options>
+</story>

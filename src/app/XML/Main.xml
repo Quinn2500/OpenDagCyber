@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <intro>DIT IS EEN INTRO</intro>
+    <options>
+        <option>
+            <title>HELP, a worm</title>
+            <file>Worm.xml</file>
+            <diffuculty>1</diffuculty>
+        </option>
+        <option>
+            <title>Second story</title>
+            <file>Second.xml</file>
+            <diffuculty>2</diffuculty>
+        </option>
+    </options>
+</menu>
