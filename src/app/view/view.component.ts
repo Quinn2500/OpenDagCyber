@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
+   public stringList: Array<String> = [
+    'WErkgith dit 7846983@! HOI',
+    'een reeder in nodd',
+    'Je bent een redder',
+    'Hallo'
+   ]
+
   constructor() { }
 
   ngOnInit() {
