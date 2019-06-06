@@ -16,13 +16,13 @@ export class AppComponent implements OnInit {
   JSON: any;
 
   ngOnInit() {
-    this.loadXML();
+    this.loadXML("Main.xml");
   }
 
   constructor(private http: HttpClient, private ngxXml2jsonService: NgxXml2jsonService, private globals: Globals) { }
 
-  loadXML(): void {
-    this.XML = this.http.get('assets/XML/Main.xml', {responseType: 'text'}).subscribe(data => {
+  loadXML(file : string): void {
+    this.XML = this.http.get('assets/XML/' + file, {responseType: 'text'}).subscribe(data => {
       this.XML = data}, error => {console.log(error)}, () => this.createJSON());    
   }
 

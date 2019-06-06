@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<story>
-    <intro TEXT="A worm has infected a part of the network and is threatening to infect a few of the servers. On this network drawing, you can see the basic structure of a network containing a few servers."/>
+<menu>
+    <intro>A worm has infected a part of the network and is threatening to infect a few of the servers. On this network drawing, you can see the basic structure of a network containing a few servers."</intro>
     <options>
         <option id="0" time="10">
             <question TEXT=""/>
@@ -53,4 +53,4 @@
             CTF"/>
         </option>
     </options>
-</story>
+</menu>

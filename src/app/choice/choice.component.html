@@ -1,13 +1,7 @@
 <div class="container-fluid parent" style="height: 20vh; background-color:blue;">
   <div class="row child">
-    <div class="col-4">
-        <button class="btn btn-danger btn-lg">Antwoord 1</button>
-    </div>
-    <div class="col-4">
-        <button class="btn btn-danger btn-lg">Antwoord 2</button>
-    </div>
-    <div class="col-4">
-        <button class="btn btn-danger btn-lg">Antwoord 3</button>
+    <div class="col-5" *ngFor="let object of globals.object.menu.options.option">
+        <button class="btn btn-danger btn-lg" (click)="chooseStory(object.file)">{{object.title}}</button>
     </div>
   </div>
 </div>
