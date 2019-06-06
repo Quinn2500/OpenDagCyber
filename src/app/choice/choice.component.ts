@@ -18,4 +18,9 @@ export class ChoiceComponent implements OnInit {
   chooseStory(file : string) {
     this.app.loadXML(file);
   }
+
+  chooseAnswer(id : number, points : number){
+    this.globals.ID = id;
+    this.globals.points += Number(points);
+  }
 }

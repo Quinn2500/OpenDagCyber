@@ -29,7 +29,6 @@ export class AppComponent implements OnInit {
   createJSON(): void {
     const parser = new DOMParser();
     const xml = parser.parseFromString(this.XML, 'text/xml');
-    this.globals.object = this.ngxXml2jsonService.xmlToJson(xml);
-    console.log(this.JSON);
+    this.globals.object = this.ngxXml2jsonService.xmlToJson(xml);    
   }
 }

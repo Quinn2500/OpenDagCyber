@@ -1,7 +1,23 @@
 <div class="container-fluid parent" style="height: 20vh; background-color:blue;">
   <div class="row child">
-    <div class="col-5" *ngFor="let object of globals.object.menu.options.option">
-        <button class="btn btn-danger btn-lg" (click)="chooseStory(object.file)">{{object.title}}</button>
+      <div *ngIf="!globals.object.menu.story">
+          <div class="col-5" *ngFor="let object of globals.object.menu.options.option">
+            <button class="btn btn-danger btn-lg" (click)="chooseStory(object.file)">{{object.title}}</button>
+          </div>
+        </div>
+    <div *ngIf="globals.object.menu.story">
+      <div *ngIf="globals.object.menu.options.option[globals.ID].answers">
+          <div class="col-5" *ngFor="let object of globals.object.menu.options.option[globals.ID].answers.answer">
+              <button class="btn btn-danger btn-lg" (click)="chooseAnswer(object.ref, object.points)">{{object.text}}</button>
+            </div> 
+      </div>
+           
+    </div>    
+    <div *ngIf="globals.object.menu.story">
+        <div *ngIf="globals.object.menu.options.option[globals.ID].file" class="col-5">
+            <button class="btn btn-danger btn-lg" (click)="chooseStory(globals.object.menu.options.option[globals.ID].file)">Main Menu</button>
+        </div>
     </div>
+    
   </div>
 </div>

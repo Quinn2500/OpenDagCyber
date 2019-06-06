@@ -4,4 +4,6 @@ import { Injectable } from '@angular/core';
 export class Globals {
   object: object = null;
   ID: number = 0;
+  story: boolean = false;
+  points: number = 0;
 }
