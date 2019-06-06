@@ -23,7 +23,7 @@
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
     "bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
-    "ngx-typed-js": "^1.0.3",
+    "ngx-typed-js": "^1.1.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "typed.js": "^2.0.10",
