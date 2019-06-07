@@ -36,6 +36,10 @@ export class ChoiceComponent implements OnInit {
     {
       this.globals.ID = 7;
       this.globals.points += 100;
+      alert("You won, you defeated the terrible virus and you did this with: "+this.globals.points+" Points!")
+    }else{
+      this.globals.points -= 5;
+      alert("This flag is not right one! Try to find the right one,\n(Hint: Not only Linux has a console!)")
     }
   }
 

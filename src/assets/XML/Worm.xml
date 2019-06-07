@@ -72,7 +72,7 @@
         <option id="4" time="10">
             <question>Removing the infected systems from your network ensures that the worm can not spread to any other systems. It might be tricky to determine exactly which systems have been infected, but removing as many as you can, greatly reduces the risk of the worm spreading. 
             In order to delete these systems you need to find the generic password for those bad infected systems!
-            (Hint: Not only Linux has a console.)</question>
+            </question>
             <CTF>123145678</CTF>
         </option>
         <option id="5" time="10">
@@ -84,7 +84,7 @@
         <option id="6" time="10">
             <question>Shutting down the entire network ensures that the worm can not spread to any other systems. This is always a last resort, because you want to have your systems running for as long as possible. You usually provide a service where the servers a critical, so shutting your network down, also shuts down your service and your business. This is way this is always a last resort.
             In order to delete the system you need to find the password for the infected system!
-            (Hint: Not only Linux has a console.)</question>
+            </question>
             <CTF>123145678</CTF>
         </option>
         <option id="7" time="10">
