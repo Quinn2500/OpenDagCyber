@@ -9,6 +9,7 @@ import { ChoiceComponent } from './choice/choice.component';
 import { ViewComponent } from './view/view.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { Globals } from './globals';
 
 @NgModule({
@@ -23,7 +24,8 @@ import { Globals } from './globals';
     AppRoutingModule,
     NgbModule,
     NgbModule.forRoot(),
-    HttpClientModule    
+    HttpClientModule,
+    FormsModule    
   ],
   providers: [Globals],
   bootstrap: [AppComponent]
