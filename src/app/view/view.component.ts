@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {Globals} from '../globals'
+
 @Component({
   selector: 'app-view',
   templateUrl: './view.component.html',
@@ -7,14 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-   public stringList: Array<String> = [
-    'WErkgith dit 7846983@! HOI',
-    'een reeder in nodd',
-    'Je bent een redder',
-    'Hallo'
-   ]
-
-  constructor() { }
+  constructor(private globals: Globals) { }
 
   ngOnInit() {
   }

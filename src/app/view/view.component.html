@@ -2,9 +2,8 @@
   <div class="shell-wrap">
     <p class="shell-top-bar">/MainDrive/Programs/SaveTheWorld.exe</p>
     <ul class="shell-body">
-      <li *ngFor="let string of stringList">
-        {{ string }}
-      </li>
+      <li *ngIf="globals.object.menu.story">{{globals.object.menu.options.option[globals.ID].question}}</li>
+      <li>{{globals.object.menu.intro}}</li>
     </ul>
     </div>
 </div>

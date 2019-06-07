@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import {Globals} from '../globals';
+
+import {AppComponent} from '../app.component';
+
 @Component({
   selector: 'app-choice',
   templateUrl: './choice.component.html',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private globals: Globals, private app: AppComponent) { }
 
   ngOnInit() {
   }
+  chooseStory(file : string) {
+    this.app.loadXML(file);
+  }
 
+  chooseAnswer(id : number, points : number){
+    this.globals.ID = id;
+    this.globals.points += Number(points);
+  }
 }

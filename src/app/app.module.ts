@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {NgxTypedJsModule} from 'ngx-typed-js';
+import { NgModule, OnInit } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { ViewComponent } from './view/view.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { Globals } from './globals';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,9 @@ import { ViewComponent } from './view/view.component';
     AppRoutingModule,
     NgbModule,
     NgbModule.forRoot(),
-    NgxTypedJsModule
+    HttpClientModule    
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
