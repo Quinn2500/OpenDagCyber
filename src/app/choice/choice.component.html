@@ -1,4 +1,4 @@
-<div class="container-fluid parent" style="height: 20vh;">
+<div class="container-fluid parent" style="height: 12vh;">
   
   <div class="row justify-content-center child">
 
@@ -9,8 +9,8 @@
       </div>
     </div>
 
-    <div class="col" *ngIf="globals.object.menu.story">
-      <div class="row justify-content-center" *ngIf="globals.object.menu.options.option[globals.ID].answers">
+    <div class="col" *ngIf="globals.object.menu.story && globals.object.menu.options.option[globals.ID].answers">
+      <div class="row justify-content-center">
         <div class="col" *ngFor="let object of globals.object.menu.options.option[globals.ID].answers.answer">
           <button class="btn btn-danger btn-lg"
             (click)="chooseAnswer(object.ref, object.points)">{{object.text}}</button>

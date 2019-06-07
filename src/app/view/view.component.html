@@ -1,11 +1,11 @@
-<div class="container-fluid parent" style="height:76vh;">
+<div class="container-fluid parent" style="height:60vh;">
   <div class="row justify-content-center">
       <div class="shell-wrap" style="width: 1100px; margin-top: 80px;">
         <p class="shell-top-bar">/Users/saviour/Documents/SaveTheWorld/</p>
-        <ul class="shell-body" style="width: 1100px; height: 300px;">
-          <li>{{globals.object.menu.intro}}</li>
-          <li *ngIf="globals.object.menu.story">{{globals.object.menu.options.option[globals.ID].question}}</li>
-        </ul>
+        <div class="shell-body" style="width: 1100px; height: 300px; font-size: 16px;">
+          <p>{{globals.object.menu.intro}}</p>
+          <p *ngIf="globals.object.menu.story">{{globals.object.menu.options.option[globals.ID].question}}</p>
+        </div>
       </div>
   </div>
 </div>
