@@ -1,9 +1,11 @@
-<div class="container-fluid parent" style=" height:76vh;">
-  <div class="shell-wrap">
-    <p class="shell-top-bar">/MainDrive/Programs/SaveTheWorld.exe</p>
-    <ul class="shell-body">
-      <li *ngIf="globals.object.menu.story">{{globals.object.menu.options.option[globals.ID].question}}</li>
-      <li>{{globals.object.menu.intro}}</li>
-    </ul>
-    </div>
+<div class="container-fluid parent" style="height:76vh;">
+  <div class="row justify-content-center">
+      <div class="shell-wrap" style="width: 1100px; margin-top: 80px;">
+        <p class="shell-top-bar">/Users/saviour/Documents/SaveTheWorld/</p>
+        <ul class="shell-body" style="width: 1100px; height: 300px;">
+          <li>{{globals.object.menu.intro}}</li>
+          <li *ngIf="globals.object.menu.story">{{globals.object.menu.options.option[globals.ID].question}}</li>
+        </ul>
+      </div>
+  </div>
 </div>
