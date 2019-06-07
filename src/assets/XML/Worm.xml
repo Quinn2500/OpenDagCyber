@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menu>
-    <story></story>
-    <intro>A worm has infected a part of the network and is threatening to infect a few of the servers. On this network drawing, you can see the basic structure of a network containing a few servers."</intro>
+    <story>1</story>
     <options>
         <option id="0" time="10">
-            <question>A computer worm is a standalone malware program that replicates itself in order to spread to other computers. Often, it uses a computer network to spread itself. Worms almost always cause at least some harm to the network, even if only by consuming bandwidth. Any extra code added to the worm is typically referred to as the “payload”. Typical malicious payloads might delete files on a host system or extract data such as confidential documents or passwords. Probably the most common payload for worms is to install a “backdoor”. This allows the computer to be remotely controlled by the worm’s author as a “zombie”."</question>
+            <question>A worm has infected a part of the network and is threatening to infect a few of the servers. On this network drawing, you can see the basic structure of a network containing a few servers.
+            A computer worm is a standalone malware program that replicates itself in order to spread to other computers. Often, it uses a computer network to spread itself. Worms almost always cause at least some harm to the network, even if only by consuming bandwidth. Any extra code added to the worm is typically referred to as the “payload”. Typical malicious payloads might delete files on a host system or extract data such as confidential documents or passwords. Probably the most common payload for worms is to install a “backdoor”. This allows the computer to be remotely controlled by the worm’s author as a “zombie”."</question>
             <image></image>
             <answers>
                 <answer >
@@ -71,7 +71,8 @@
         </option>
         <option id="4" time="10">
             <question>Removing the infected systems from your network ensures that the worm can not spread to any other systems. It might be tricky to determine exactly which systems have been infected, but removing as many as you can, greatly reduces the risk of the worm spreading. 
-            CTF</question>
+            </question>
+            <CTF>123145678</CTF>
         </option>
         <option id="5" time="10">
             <question>Hooking up your own laptop opens you up to the risk of getting infected yourself. This should always be done with specialized software, on a machine that has no importance. Maybe picking your own laptop, is not the right call in this scenario.
@@ -81,7 +82,12 @@
         </option>
         <option id="6" time="10">
             <question>Shutting down the entire network ensures that the worm can not spread to any other systems. This is always a last resort, because you want to have your systems running for as long as possible. You usually provide a service where the servers a critical, so shutting your network down, also shuts down your service and your business. This is way this is always a last resort.
-            CTF</question>
+            </question>
+            <CTF>123145678</CTF>
+        </option>
+        <option id="7" time="10">
+            <question>Good job finding the Flag. You can continue to the main menu now.</question>
+            <file>Main.xml</file>
         </option>
     </options>
 </menu>

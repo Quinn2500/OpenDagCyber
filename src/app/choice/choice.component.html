@@ -2,7 +2,7 @@
   <div class="row child">
       <div *ngIf="!globals.object.menu.story">
           <div class="col-5" *ngFor="let object of globals.object.menu.options.option">
-            <button class="btn btn-danger btn-lg" (click)="chooseStory(object.file)">{{object.title}}</button>
+            <button class="btn btn-danger btn-lg" (click)="chooseFile(object.file, object.id)" [disabled]="testStory(object.id)">{{object.title}}</button>
           </div>
         </div>
     <div *ngIf="globals.object.menu.story">
@@ -15,7 +15,16 @@
     </div>    
     <div *ngIf="globals.object.menu.story">
         <div *ngIf="globals.object.menu.options.option[globals.ID].file" class="col-5">
-            <button class="btn btn-danger btn-lg" (click)="chooseStory(globals.object.menu.options.option[globals.ID].file)">Main Menu</button>
+          {{setGameEnd(globals.object.menu.story)}}
+            <button class="btn btn-danger btn-lg" (click)="chooseFile(globals.object.menu.options.option[globals.ID].file)">Main Menu</button>
+        </div>
+    </div>
+
+    <div *ngIf="globals.object.menu.story">
+        <div *ngIf="globals.object.menu.options.option[globals.ID].CTF" class="col-5">
+          {{ctf(globals.object.menu.options.option[globals.ID].CTF)}}
+          <input type="text" name="flag" [(ngModel)]="flagString">  
+          <button class="btn btn-danger btn-lg" (click)="flag(flagString, globals.object.menu.options.option[globals.ID].CTF)">Submit flag</button>
         </div>
     </div>
     

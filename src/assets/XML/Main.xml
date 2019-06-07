@@ -6,12 +6,12 @@
         <option>
             <title>HELP, a worm</title>
             <file>Worm.xml</file>
-            <diffuculty>1</diffuculty>
+            <id>1</id>
         </option>
         <option>
             <title>Second story</title>
             <file>Second.xml</file>
-            <diffuculty>2</diffuculty>
+            <id>2</id>
         </option>
     </options>
 </menu>

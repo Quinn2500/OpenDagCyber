@@ -23,12 +23,14 @@ export class AppComponent implements OnInit {
 
   loadXML(file : string): void {
     this.XML = this.http.get('assets/XML/' + file, {responseType: 'text'}).subscribe(data => {
-      this.XML = data}, error => {console.log(error)}, () => this.createJSON());    
+      this.XML = data}, error => {console.log(error)}, () => this.createJSON());
+      this.globals.storiesDone.push(0);    
   }
 
   createJSON(): void {
     const parser = new DOMParser();
     const xml = parser.parseFromString(this.XML, 'text/xml');
     this.globals.object = this.ngxXml2jsonService.xmlToJson(xml);    
+    this.globals.ID = 0;
   }
 }
