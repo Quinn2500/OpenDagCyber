@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <story>1</story>
+    <options>
+        <option id="0" time="10">
+            <question>A worm has infected a part of the network and is threatening to infect a few of the servers. On this network drawing, you can see the basic structure of a network containing a few servers.
+            A computer worm is a standalone malware program that replicates itself in order to spread to other computers. Often, it uses a computer network to spread itself. Worms almost always cause at least some harm to the network, even if only by consuming bandwidth. Any extra code added to the worm is typically referred to as the “payload”. Typical malicious payloads might delete files on a host system or extract data such as confidential documents or passwords. Probably the most common payload for worms is to install a “backdoor”. This allows the computer to be remotely controlled by the worm’s author as a “zombie”."</question>
+            <image></image>
+            <answers>
+                <answer >
+                    <ref>1</ref>
+                    <points>0</points>
+                    <text>Delete the Worm</text>
+                </answer>
+                <answer>
+                    <ref>2</ref>
+                    <points>10</points>
+                    <text>Disconnect the Central Server</text>
+                </answer>
+            </answers>
+        </option>
+        <option id="1" time="10">
+            <question>It is impossible to just delete a worm of your system. This does require more elaborate tools, like anti-virus programs with quarantine functionality. It is also a very time consuming process, because the entire machine has to be scanned to find the worm. The worm has now spread to two of your systems.</question>
+            <image></image>
+            <answers>
+                <answer>
+                    <ref>3</ref>
+                    <points>0</points>
+                    <text>Asses the damage the worm has done to your servers</text>
+                </answer>
+                <answer>
+                    <ref>4</ref>
+                    <points>10</points>
+                    <text>Disconnect infected systems</text>
+                </answer>
+            </answers>
+        </option>
+        <option id="2" time="10">
+            <question> When you have little time to act, it is always the right choice to protect your most important data/services. Focus on these and when they are secured you can start to tackle your problem. 
+            The worm has now spread to two of your systems.</question>
+            <image></image>
+            <answers>
+                <answer>
+                    <ref>3</ref>
+                    <points>0</points>
+                    <text>Asses the damage the worm has done to your servers</text>
+                </answer>
+                <answer>
+                    <ref>4</ref>
+                    <points>10</points>
+                    <text>Disconnect infected systems</text>
+                </answer>
+            </answers>
+        </option>
+        <option id="3" time="10">
+            <question>The worm spreads. Assessing damage is done when the malware has been contained and under control. This is done to determine if some data is stolen or deleted, or if there is physical damage to one of your systems. If you start doing this before, you risk more systems to get infected. 
+            You now have 3 server infected by the worm. The worm has taken control of most of your systems on the network.</question>
+            <image></image>
+            <answers>
+                <answer>
+                    <ref>5</ref>
+                    <points>0</points>
+                    <text>Hook up your own laptop to attack the worm</text>
+                </answer>
+                <answer>
+                    <ref>6</ref>
+                    <points>10</points>
+                    <text>Shutdown your entire network</text>
+                </answer>
+            </answers>
+        </option>
+        <option id="4" time="10">
+            <question>Removing the infected systems from your network ensures that the worm can not spread to any other systems. It might be tricky to determine exactly which systems have been infected, but removing as many as you can, greatly reduces the risk of the worm spreading. 
+            In order to delete these systems you need to find the generic password for those bad infected systems!
+            (Hint: Not only Linux has a console.)</question>
+            <CTF>123145678</CTF>
+        </option>
+        <option id="5" time="10">
+            <question>Hooking up your own laptop opens you up to the risk of getting infected yourself. This should always be done with specialized software, on a machine that has no importance. Maybe picking your own laptop, is not the right call in this scenario.
+            Game Over. All servers in your network are infected.</question>
+            <image></image>
+            <file>Main.xml</file>
+        </option>
+        <option id="6" time="10">
+            <question>Shutting down the entire network ensures that the worm can not spread to any other systems. This is always a last resort, because you want to have your systems running for as long as possible. You usually provide a service where the servers a critical, so shutting your network down, also shuts down your service and your business. This is way this is always a last resort.
+            In order to delete the system you need to find the password for the infected system!
+            (Hint: Not only Linux has a console.)</question>
+            <CTF>123145678</CTF>
+        </option>
+        <option id="7" time="10">
+            <question>Good job finding the Flag. You can continue to the main menu now.</question>
+            <file>Main.xml</file>
+        </option>
+    </options>
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <intro>It is 10 PM and you are the only one working in the security lab of the NCSC. It’s been weeks since you had any company during your night shifts. Your current shift has been uneventful. There has been a steady stream of incidents, like usual. The internet never sleeps and so do hackers. Problems can arise at any point in the day, and also in any form. Scanning tools keep track of everything that is happening in the monitored systems. 
+    A popup appears on your screen, which grabs your attention. Something seems to be going on at the Amsterdam Internet Exchange. The Exchange handles all international internet traffic for the netherlands. Problems at the Exchange will affect everybody in the Netherlands who uses the internet. More problems start to arise, choose which one you want to tackle first…"</intro>
+    <options>
+        <option>
+            <title>HELP, a worm</title>
+            <file>Worm.xml</file>
+            <id>1</id>
+        </option>
+        <option>
+            <title>Second story</title>
+            <file>Second.xml</file>
+            <id>2</id>
+        </option>
+    </options>
+</menu>

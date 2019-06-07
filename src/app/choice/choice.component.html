@@ -1,0 +1,39 @@
+<div class="container-fluid parent" style="height: 12vh;">
+  
+  <div class="row justify-content-center child">
+
+    <div class="col row justify-content-center" *ngIf="!globals.object.menu.story">
+      <div class="col" *ngFor="let object of globals.object.menu.options.option">
+        <button class="btn btn-danger btn-lg" (click)="chooseFile(object.file, object.id)"
+          [disabled]="testStory(object.id)">{{object.title}}</button>
+      </div>
+    </div>
+
+    <div class="col" *ngIf="globals.object.menu.story && globals.object.menu.options.option[globals.ID].answers">
+      <div class="row justify-content-center">
+        <div class="col" *ngFor="let object of globals.object.menu.options.option[globals.ID].answers.answer">
+          <button class="btn btn-danger btn-lg"
+            (click)="chooseAnswer(object.ref, object.points)">{{object.text}}</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="col row justify-content-center" *ngIf="globals.object.menu.story && globals.object.menu.options.option[globals.ID].file">
+      <div class="col">
+        {{setGameEnd(globals.object.menu.story)}}
+        <button class="btn btn-danger btn-lg"
+          (click)="chooseFile(globals.object.menu.options.option[globals.ID].file)">Main Menu</button>
+      </div>
+    </div>
+
+    <div class="col row justify-content-center" *ngIf="globals.object.menu.story && globals.object.menu.options.option[globals.ID].CTF">
+      <div>
+        {{ctf(globals.object.menu.options.option[globals.ID].CTF)}}
+        <input class="col" type="text" name="flag" [(ngModel)]="flagString">
+        <button class="col btn btn-danger btn-lg" (click)="flag(flagString, globals.object.menu.options.option[globals.ID].CTF)">Submit flag</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
