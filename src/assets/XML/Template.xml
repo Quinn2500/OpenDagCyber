@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <story>1</story>
+    <options>
+        <option id="0" time="10">
+            <question>Story text for the first option.</question>
+            <image></image>
+            <answers>
+                <answer >
+                    <ref>1</ref>
+                    <points>0</points>
+                    <text>Text for the first answer</text>
+                </answer>
+                <answer>
+                    <ref>2</ref>
+                    <points>10</points>
+                    <text>Text for the second answer</text>
+                </answer>
+            </answers>
+        </option>
+        <option id="1" time="10">
+            <question></question>
+            <answers>
+                <answer>
+                    <ref>3</ref>
+                    <points>0</points>
+                    <text></text>
+                </answer>
+                <answer>
+                    <ref>4</ref>
+                    <points>10</points>
+                    <text></text>
+                </answer>
+            </answers>
+        </option>
+        <option id="2" time="10">
+            <question> </question>
+            <image></image>
+            <answers>
+                <answer>
+                    <ref>3</ref>
+                    <points>0</points>
+                    <text></text>
+                </answer>
+                <answer>
+                    <ref>4</ref>
+                    <points>10</points>
+                    <text></text>
+                </answer>
+            </answers>
+        </option> 
+        <option>
+            <question> </question>
+            <file>Main.xml</file>
+        </option>
+    </options>
+</menu>
